@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+    
+}
+
+
+section {
+    width: 72%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+p {
+    margin-block-start: 0;
+}
+
+#home {
+    
+    align-items: flex-start;
+}
+
+#home div {
+    margin-bottom: -5px;
+}
+
+#about-me, #portfolio {
+    background: #E5E5E5;
+    padding: 80px 189px;
+    text-align: center;
+}
+
+#skills, #contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+
+nav ul li {
+    margin-right: 40px;
+    
+}
+
+nav ul li a:hover {
+    color: darkcyan;
+    text-shadow: 2px -1px darkcyan;
+    
+}
+
+
+#skills ul li {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 0 25px;
+}
+
+#skills h3 {
+    font-size: 14px;
+    margin-bottom: 40px;
+
+}
+
+#contact ul li {
+    padding: 15px;
+}
+
+button {
+    width: 180px;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+    background: #070707;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    margin-top: 60px;
+    transition: all .6s ease;
+}
+
+button:hover {
+    color: black;
+    background: darkcyan;
+}
+
+#portfolio a {
+    display: inline-block;
+    color: #070707;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+header a, footer a {
+    text-decoration: none;
+    color: crimson;
+    text-shadow: 2px -1px #db0d0d;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h1, h2, h3, button {
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
