@@ -6,15 +6,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    padding: 3px;
-    background-color: rgba(255, 255, 255, 0.9);
-    
-}
-
-
 section {
     width: 72%;
     margin: auto;
@@ -24,8 +15,24 @@ section {
 
 }
 
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
 p {
     margin-block-start: 0;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+    
 }
 
 #home {
@@ -33,7 +40,7 @@ p {
     align-items: flex-start;
 }
 
-#home div {
+#home .img {
     margin-bottom: -5px;
 }
 
@@ -49,45 +56,37 @@ p {
     
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-inline-start: 0;
-}
 
-
-nav ul li {
+.header .nav-item {
     margin-right: 40px;
     
 }
 
-nav ul li a:hover {
+.header .red:hover {
     color: darkcyan;
     text-shadow: 2px -1px darkcyan;
     
 }
 
 
-#skills ul li {
+#skills .list-icon {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     padding: 0 25px;
 }
 
-#skills h3 {
+#skills .heading-3 {
     font-size: 14px;
     margin-bottom: 40px;
 
 }
 
-#contact ul li {
+#contact .social-list {
     padding: 15px;
 }
 
-button {
+.btn {
     width: 180px;
     height: 44px;
     border: none;
@@ -103,36 +102,36 @@ button {
     transition: all .6s ease;
 }
 
-button:hover {
+.btn:hover {
     color: black;
     background: darkcyan;
 }
 
-#portfolio a {
+#portfolio .portf-link {
     display: inline-block;
     color: #070707;
     margin-top: 40px;
     margin-bottom: 70px;
 }
-header a, footer a {
+.header .red, .footer .red {
     text-decoration: none;
     color: crimson;
     text-shadow: 2px -1px #db0d0d;
 }
 
-h1 {
+.title {
     font-size: 48px;
 }
 
-h2 {
+.subtitle {
     font-size: 34px;
 }
 
-h1, h2, h3, button {
+.title, .subtitle, .heading-3, .btn {
     font-weight: 700;
 }
 
-footer {
+.footer {
     display: flex;
     justify-content: center;
 }

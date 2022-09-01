@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contacts</a></li>
+                <li class="nav-item"><a class="red" href="#home">Home</a></li>
+                <li class="nav-item"><a class="red" href="#about-me">About me</a></li>
+                <li class="nav-item"><a class="red" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="red" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="red" href="#contact">Contacts</a></li>
             </ul>
         </nav>
     </header>
     <hr>
 
     <section id="home">
-        <h1>Denis Novik</h1>
-        <div>
+        <h1 class="title">Denis Novik</h1>
+        <div class="img">
             <img src="./src/images/photox940.jpg" alt="Denis Novik">
         </div>
     </section>
 
     <section id="about-me">
-        <h2>About me</h2>
+        <h2 class="subtitle">About me</h2>
         <div>
             <p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
         </div>
@@ -42,43 +42,43 @@
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
+        <h2 class="subtitle">Skills</h2>
         <div>
             <p>I work in such programs as</p>
         </div>
         <ul>
-            <li>
+            <li class="list-icon">
                 <div>
                     <img src="./src/images/Ps.svg" alt="Adobe Photoshop">
                 </div>
-                <h3>Adobe Photoshop</h3>
+                <h3 class="heading-3">Adobe Photoshop</h3>
                 <div>
                     <img src="./src/images/PsRate.svg" alt="Ps rate">
                 </div>
             </li>
-            <li>
+            <li class="list-icon">
                 <div>
                     <img src="./src/images/Ai.svg" alt="Adobe Illustrator">
                 </div>
-                <h3>Adobe Illustrator</h3>
+                <h3 class="heading-3">Adobe Illustrator</h3>
                 <div>
                     <img src="./src/images/AiRate.svg" alt="Ai rate">
                 </div>
             </li>
-            <li>
+            <li class="list-icon">
                 <div>
                     <img src="./src/images/Ae.svg" alt="Adobe After Effects">
                 </div>
-                <h3>Adobe After Effects</h3>
+                <h3 class="heading-3">Adobe After Effects</h3>
                 <div>
                     <img src="./src/images/AeRate.svg" alt="Ae rate">
                 </div>
             </li>
-            <li>
+            <li class="list-icon">
                 <div>
                     <img src="./src/images/Figma.svg" alt="Figma">
                 </div>
-                <h3>Figma</h3>
+                <h3 class="heading-3">Figma</h3>
                 <div>
                     <img src="./src/images/FigmaRate.svg" alt="Figma rate">
                 </div>
@@ -87,51 +87,51 @@
     </section>
 
     <section id="portfolio">
-        <h2>Portfolio</h2>
+        <h2 class="subtitle">Portfolio</h2>
         <div>
             <div>
                 <img src="./src/images/Fashion-Store.jpg" alt="Fashion-Store">
             </div>
-            <a href="">Online fashion store - Homepage</a>
+            <a class="portf-link" href="#">Online fashion store - Homepage</a>
         </div>
         <div>
             <div>
                 <img src="./src/images/reebok_web.jpg" alt="Reebok">
             </div>
-            <a href="">Reebok Store - Concept</a>
+            <a class="portf-link" href="#">Reebok Store - Concept</a>
         </div>
         <div>
             <div>
                 <img src="./src/images/braun-landing.jpg" alt="Braun">
             </div>
-            <a href="#">Braun Landing Page - Concept</a>
+            <a class="portf-link" href="#">Braun Landing Page - Concept</a>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contacts</h2>
+        <h2 class="subtitle">Contacts</h2>
         <div>
             <p>Want to know more or just chat?</p>
         </div>
         <div>
             <p>You are welcome!</p>
         </div>
-        <button>Send Message</button>
+        <button class="btn">Send Message</button>
         <ul>
-            <li><a href="#"><img src="./src/images/linkedin.svg" alt="LinkedIn"></a></li>
-            <li><a href="#"><img src="./src/images/instagram.svg" alt="Instagram"></a></li>
-            <li><a href="#"><img src="./src/images/behance.svg" alt="Behance"></a></li>
-            <li><a href="#"><img src="./src/images/dribbble.svg" alt="Dribble"></a></li>
+            <li class="social-list"><a href="#"><img src="./src/images/linkedin.svg" alt="LinkedIn"></a></li>
+            <li class="social-list"><a href="#"><img src="./src/images/instagram.svg" alt="Instagram"></a></li>
+            <li class="social-list"><a href="#"><img src="./src/images/behance.svg" alt="Behance"></a></li>
+            <li class="social-list"><a href="#"><img src="./src/images/dribbble.svg" alt="Dribble"></a></li>
         </ul>
         <span>
             Like me on LinkedIn, Instagram, Behance, Dribble
         </span>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div>
             <p>
-                &copy; Created for <a href="https://beetroot.academy/" target="_blank">Beetroot Academy</a>
+                &copy; Created for <a class="red" href="https://beetroot.academy/" target="_blank">Beetroot Academy</a>
             </p>
         </div>
     </footer>
