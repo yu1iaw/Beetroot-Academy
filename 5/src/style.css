@@ -40,6 +40,77 @@ p {
     margin: 0 0 20px;
 }
 
+.nav-bar {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 26px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+}
+
+.nav-menu {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-menu p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    color: #2F281E;
+}
+
+.nav-menu p:first-child {
+    color: #FF9900;
+    cursor: pointer;
+}
+
+.nav-menu p:hover {
+    color: #FF9900;
+    cursor: pointer;
+}
+
+.nav-right {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-right button {
+    max-width: 110px;
+    width: 100%;
+    padding: 13px 23px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    color: #2F281E;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.nav-right button:last-child {
+    color: white;
+    background-color: #FF9900;
+}
+
+.nav-right button:hover {
+    color: white;
+    background-color: #FF9900;
+}
+
+
 .container {
     max-width: 1230px;
     width: 100%;
