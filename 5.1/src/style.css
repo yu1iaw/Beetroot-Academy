@@ -40,8 +40,7 @@ ul {
 
 }
 
-li {
-
+.li {
     display: inline-block;
     font-size: 22px;
     line-height: 25.78px;
@@ -49,6 +48,12 @@ li {
     border: 2px solid white;
     padding: 20px;
     text-align: center;
+    opacity: 0.7;
+}
+
+.li:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 span {
@@ -59,21 +64,54 @@ span {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
-    background-color: yellowgreen;
 }
 
 
 .row1 li:nth-child(1) {
     width: 50%;
+    background-color: rgb(51, 153, 204);
+    border-top-width: 4px;
+    border-left-width: 4px;
 }
+
 
 .row1 li:nth-child(2),
 .row1 li:nth-child(3) {
     width: 25%;
 }
 
+
+.row1 li:nth-child(2) {
+    background-color: #33CCCC;
+    border-top-width: 4px;
+}
+
+.row1 li:nth-child(3) {
+    background-color: #996699;
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+
 .row2 li {
     width: calc(100% / 4);
+}
+
+.row2 li:nth-child(1) {
+    background-color: #C24747;
+    border-left-width: 4px;
+}
+
+.row2 li:nth-child(2) {
+    background-color: #E2674A;
+}
+
+.row2 li:nth-child(3) {
+    background-color: #FFCC66;
+}
+
+.row2 li:nth-child(4) {
+    background-color: #99CC99;
+    border-right-width: 4px;
 }
 
 .row3 li:nth-child(1),
@@ -81,12 +119,29 @@ span {
     width: 25%;
 }
 
+.row3 li:nth-child(1) {
+    background-color: #669999;
+    border-left-width: 4px;
+}
+
 .row3 li:nth-child(2) {
     width: 50%;
+    background-color: #CC6699;
+}
+
+
+.row3 li:nth-child(3) {
+    background-color: #339966;
+    border-right-width: 4px;
 }
 
 li:only-child {
     width: 100%;
+    background-color: #666699;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+
 } 
 
 .container .wi {
