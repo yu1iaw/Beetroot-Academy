@@ -8,8 +8,13 @@ body {
     margin: 0;
     color: #544837;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+section {
+    margin-bottom: 100px;
 }
 
 img {
@@ -40,6 +45,10 @@ h3 {
     margin: 0 0 16px;
 }
 
+h4 {
+    margin: 0 0 10px;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -53,9 +62,6 @@ ul li {
 a {
     text-decoration: none;
     color: #544837;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
 }
 
 p {
@@ -85,7 +91,6 @@ p {
 
 .nav-menu p {
     margin: 0;
-    font-size: 16px;
     line-height: 28px;
     color: #2F281E;
 }
@@ -153,7 +158,12 @@ p {
 }
 
 .hero-section .col:first-child {
-    padding: 97px 0;
+    padding: 97px 50px 97px 0;
+}
+
+.hero-section .text-holder {
+    font-size: 18px;
+    line-height: 28px;
 }
 
 .btn {
@@ -211,6 +221,48 @@ p {
     margin: 0 auto;
 }
 
+.benefits .general-content,
+.product-managers .general-content,
+.marketers .general-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.product-managers .general-content {
+    flex-direction: row;
+    
+}
+
+.benefits .text-content,
+.product-managers .text-content,
+.marketers .text-content {
+    align-self: center;
+    width: 41%;
+}
+
+.benefits .text-content {
+    width: 42%;
+}
+
+.product-managers .managers-item {
+    display: flex;
+    padding: 0 0 25px;
+}
+
+.managers-item img {
+    margin-right: 30px;
+}
+
+.managers-item p {
+    margin: 0;
+}
+
+.hr {
+    min-height: 70px;
+    border-top: 1px solid rgba(188, 208, 229, 0.5);
+}
+
 .footer {
     max-width: 1230px;
     width: 100%;
@@ -227,7 +279,8 @@ p {
 }
 
 .footer .column > div {
-    height: 210px;
+    min-height: 210px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -237,12 +290,17 @@ p {
 input[type="tel"] {
     font-size: 16px;
     line-height: 20px;
-    color: #BCD0E5;
     max-width: 340px;
     width: 100%;
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #BCD0E5;
-    margin: 0 0 5px;
+    margin: 0 0 10px;
+}
+
+input::placeholder {
+    color: #BCD0E5;
+    font-size: 16px;
+    line-height: 20px;
 }
 
