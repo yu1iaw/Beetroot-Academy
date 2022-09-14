@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <main>
+        <h1>Create an Account</h1>
+        <form action="#">
+            <div class="row">
+                <div class="first">
+                    <div class="col">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="name" autofocus required>
+                    </div>
+                    <div class="col">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last=name" name="last">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="second">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                    <span>We'll never share your email with anyone else.</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="third">
+                    <input class="radio" type="radio" name="sex" id="male" value="Male" checked>
+                    <label for="male">Male</label>
+                    <input class="radio" type="radio" name="sex" id="female" value="Female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="fourth">
+                    <div class="col">
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="select">Select</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="city">City</label>
+                        <input type="text" id="city">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="fifth">
+                    <button class="sign-up" type="submit">Sign Up</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="span">
+            <span>
+                By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and <a
+                    href="#">Privacy Policy</a>.
+            </span>
+        </div>
+        <div class="hr"></div>
+        <div class="log-in">
+            <p>Have an account?</p>
+            <p><a href="page2.html" target="_blank">Log In</a></p>
+        </div>
+
+    </main>
+</body>
+
+</html>
