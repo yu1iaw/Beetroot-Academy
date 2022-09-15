@@ -264,7 +264,8 @@ button[type="reset"] {
     right: 35px;
     max-height: 20px;
     height: 20px;
-    border-bottom: 1px solid #E4E4E4;
+    border-radius: initial;
+    border-bottom: var(--borders-style)
 }
 
 .log-in {
@@ -289,6 +290,7 @@ select {
     position: absolute;
     font-size: 12px;
     color: var(--borders-style);
+    color:#969696;
 }
 
 .fa-caret-up {
