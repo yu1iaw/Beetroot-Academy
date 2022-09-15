@@ -32,7 +32,7 @@ main {
 }
 
 .main {
-    min-height: 627px;
+    min-height: 628px;
     height: 100%;
 }
 
@@ -253,7 +253,7 @@ button[type="reset"] {
 
 .span {
     max-width: 410px;
-    width: 100%;
+    width: 79%;
     margin: 0 auto;
     text-align: center;
 }
@@ -275,5 +275,28 @@ button[type="reset"] {
     align-items: center;
 }
 
+/*custom select*/
 
+select {
+    appearance: none;
+}
 
+.col.custom {
+    position: relative;
+}
+
+.fa-sharp {
+    position: absolute;
+    font-size: 12px;
+    color: var(--borders-style);
+}
+
+.fa-caret-up {
+    right: 14px;
+    bottom: 14px;
+}
+
+.fa-caret-down {
+    right: 14px;
+    bottom: 10px;
+}
