@@ -9,26 +9,27 @@
     <link rel="stylesheet" href="src/styles.css">
     <title>Profile</title>
 </head>
+
 <body>
     <main class="main">
         <h1 class="profile">Profile</h1>
-        <div class="row">
-            <div class="first page2">
-                <div class="col avatar">
-                    <img src="src/images/avatar.png" alt="profile-photo">
-                </div>
-                <div class="col setting-avatar">
-                    <form action="#">
-                        <label for="myfile">
-                            <input type="file" name="myfile" id="myfile" accept="image/*">
-                        </label>
-                        <button type="reset"></button>
-                    </form>
-                    <span>Up to 1 MB (300x300 px)</span>
+        <form action="#">
+            <div class="row">
+                <div class="first page2">
+                    <div class="col avatar">
+                        <img src="src/images/avatar.png" alt="profile-photo">
+                    </div>
+                    <div class="col setting-avatar">
+                        <div>
+                            <label for="myfile">
+                                <input type="file" name="myfile" id="myfile" accept="image/*">
+                            </label>
+                            <button type="reset"></button>
+                        </div>
+                        <span>Up to 1 MB (300x300 px)</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <form action="#">
             <div class="row">
                 <div class="second first page2">
                     <div class="col">
@@ -45,9 +46,9 @@
                 <div class="third first page2">
                     <div class="col">
                         <label for="country">Country</label>
-                            <select name="country" id="country">
-                                <option value="select">Select</option>
-                            </select>
+                        <select name="country" id="country">
+                            <option value="select">Select</option>
+                        </select>
                     </div>
                     <div class="col">
                         <label for="city">City</label>
@@ -59,7 +60,7 @@
                 <div class="fourth first page2">
                     <div class="col">
                         <label for="quantity">Zip Code</label>
-                        <input type="number" id="quantity" name="quantity" min="0" max="100">
+                        <input type="number" id="quantity" name="quantity" min="0" max="100000">
                     </div>
                     <div class="col">
                         <label for="phone">Phone Number</label>
@@ -71,7 +72,6 @@
                 <button class="update" type="submit">Update</button>
             </div>
         </form>
-        
     </main>
 
 </body>
