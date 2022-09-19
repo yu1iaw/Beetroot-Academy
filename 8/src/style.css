@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans&family=Staatliches&family=Tourney:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans&family=Roboto:wght@700&family=Staatliches&family=Tourney:wght@600&display=swap');
 *,
 ::before,
 ::after {
@@ -21,6 +20,15 @@ body {
 
 section {
     margin-bottom: 70px;
+}
+
+h1 {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
 }
 
 h2 {
@@ -130,6 +138,10 @@ li:hover > a {
     transform: translate(10px, 10px);
 }
 
+.nav-bar a:hover {
+    color: #705353;
+}
+
 .main-content {
     margin: -565px 0px -50px 429px;
 }
@@ -145,4 +157,121 @@ li:hover > a {
 .main-content p {
     text-align: justify;
     margin-block-start: 0;
+}
+
+.title {
+    padding: 160px 0 30px;
+}
+
+.title .hr {
+    display: inline-block;
+    vertical-align: 8px;
+}
+
+.cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-top: 1px solid #BFBFBF;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+.brand-card {
+    width: 270px;
+    height: 180px;
+    margin: 20px 0;
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.inner-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform .8s;
+    transform-style: preserve-3d;
+}
+
+.brand-card:hover .inner-card {
+    transform: rotateX(180deg);
+    cursor: grab;
+}
+
+.brand-front, .brand-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 50px 30px;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.brand-front {
+    background-color: #E6E6E6;
+    box-shadow: 0 -8px 7px rgb(0 0 0 / 20%), 0 13px 5px rgb(0 0 0 / 30%), 6px 6px 5px white inset, -6px -6px 5px white inset;
+}
+
+.brand-back {
+    background-color: #1A1A1A;
+    box-shadow: 5px 5px 5px rgb(255 255 255 / 26%) inset, -5px -5px 5px rgb(255 255 255 / 26%) inset, 0 6px 8px 0 rgb(0 0 0 / 42%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    transform: rotateX(180deg);
+}
+
+.brand-front.facebook {
+    background-image: url(images/facebook-logo-front.svg);
+}
+.brand-back.facebook {
+    background-image: url(images/facebook-logo-back.svg);
+}
+
+.brand-front.insta {
+    background-image: url(images/instagram-logo-front.svg);
+}
+.brand-back.insta {
+    background-image: url(images/instagram-logo-back.svg);
+}
+
+.brand-front.shopify {
+    background-image: url(images/shopify-logo-front.svg);
+}
+.brand-back.shopify {
+    background-image: url(images/shopify-logo-back.svg);
+}
+
+.brand-front.skype {
+    background-image: url(images/skype-logo-front.svg);
+}
+.brand-back.skype {
+    background-image: url(images/skype-logo-back.svg);
+}
+
+.brand-front.pinterest {
+    background-image: url(images/pinterest-logo-front.svg);
+}
+.brand-back.pinterest {
+    background-image: url(images/pinterest-logo-back.svg);
+}
+
+.brand-front.wix {
+    background-image: url(images/wix.com-logo-front.svg);
+}
+.brand-back.wix {
+    background-image: url(images/wix.com-logo-back.svg);
+}
+
+.brand-front.salesforce {
+    background-image: url(images/saleforse-logo-front.svg);
+}
+.brand-back.salesforce {
+    background-image: url(images/saleforse-logo-back.svg);
+}
+
+.brand-front.soundcloud {
+    background-image: url(images/soundcloud-logo-front.svg);
+}
+.brand-back.soundcloud {
+    background-image: url(images/soundcloud-logo-back.svg);
 }
