@@ -3,7 +3,7 @@
 const image = document.querySelectorAll('.image'),
       blur = document.querySelectorAll('.blur');
 
-for (let i = 0; i <= image.length; i++) {
+for (let i = 0; i < image.length; i++) {
     image[i].addEventListener('mouseenter', () => {
         blur[i].animate([
             { backgroundImage: 'linear-gradient(360deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%)' }
