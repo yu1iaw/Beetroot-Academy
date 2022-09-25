@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Train+One&display=swap');
+
+:root {
+    --sky: #18B5DC;
+    --cloud: white;
+    --storm: #3C3C3C;
+}
+
+*, 
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #3C3C3C;
+    margin: 0;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background-color: var(--cloud);
+    border-bottom: 1px solid #BDBDBD;
+}
+
+header .links {
+    width: 35%;
+}
+
+main {
+    padding: 150px 60px;
+    background-color: #F6F6F6;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #282528;
+}
+
+.hr {
+    width: 45px;
+    height: 4px;
+    background-color: #DDDBDB;
+    margin: 0 auto;
+}
+
+.fish {
+    width: 48%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+footer {
+    display: flex;
+    padding: 40px 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cloud);
+}
+
+.btn {
+    max-width: 130px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: var(--storm);
+    padding: 10px 20px;
+    border: 1px solid var(--storm);
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.btn:hover {
+    color: var(--cloud);
+    background-color: var(--sky);
+    border: 1px solid transparent;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    margin: 0;
+    font-family: 'Train One', cursive;
+    font-size: 30px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #282528;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.links li {
+    padding: 0 12px;
+}
+
+.links li:hover a {
+    color: var(--sky);
+}
+
+.icons li {
+    padding: 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--storm);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    transition: color .2s ease-in;
+}
+
+.grid-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    justify-content: space-between;
+}
+
+.icons [class^="icon-"]::before {
+    color: var(--sky);
+    line-height: 40px;
+    border: 1px solid var(--sky);
+    transition: all .2s ease-in;
+}
+
+.icons [class^="icon-"]:hover:before {
+    color: var(--cloud);
+    background-color: var(--sky);
+    border: 1px solid transparent;
+}
+
+.card [class^="icon-"]::before {
+    color: var(--cloud);
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid transparent;
+    transition: all .2s ease-in;
+}
+
+.card [class^="icon-"]:hover:before {
+    color: var(--sky);
+    background-color: var(--cloud);
+}
+
+.card .icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+
+.card li {
+    padding: 0;
+}
+
+.photo {
+    display: inline-block;
+    position: relative;
+    max-height: 270px;
+}
+
+.photo:hover .canvas {
+    background-color: var(--sky);
+}
+
+.photo:hover .icons {
+    opacity: 1;
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color .4s ease-in-out;
+}
+
+.descr span {
+    font-weight: 300;
+    font-size: 18px;
+    color: #646464;
+}
