@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Quicksand:wght@500&family=Roboto:wght@400;700&display=swap');
+
+body {
+	margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #16133D;
+}
+
+header {
+	border-bottom: 1px solid #efeef3;
+}
+
+h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    margin: 15px 0 40px;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 35px;  
+	margin-left: 12px;
+	color: white;
+
+}
+
+main {
+    padding: 100px 0;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+	margin-left: -3px;
+}
+
+li {
+	display: inline-block;
+	margin: 0 3px;
+}
+
+a {
+    text-decoration: none;
+    color: #3DB370;
+    font-weight: 600;
+    line-height: 19px;
+    transition: color 0.2s ease-in;
+    
+}
+
+a:hover {
+    color: LightSeaGreen;
+}
+
+footer {
+	background-color: #16133d;
+	padding: 16px 0 14px 0;
+}
+
+header .logo {
+	padding-top: 10px;
+}
+
+header .logo h2 {
+	color: #16133d;
+}
+
+.container {
+	max-width: 1150px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.span {
+    line-height: 21px;
+    color: #7690A8;
+
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	padding-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, auto));
+    grid-gap: 20px;
+    justify-content: flex-start;
+}
+
+.col {
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+    padding: 40px 55px 40px 40px;
+    max-width: 370px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border .3s .1s linear;
+
+}
+
+.col:hover {
+    border: 1px solid #3DB370;
+}
+
+.icon {
+	background-color: #efeef3;
+	border-radius: 5px;
+	display: inline-block;
+    transition: all 0.2s ease-in;
+}
+
+
+.twitter {
+	width: 20px;
+	height: 17px;
+	padding: 10px 9px;
+	fill: #0d0d0d;
+}
+
+.twitter:hover {
+	fill: #3db370;
+}
+
+.instagram {
+	width: 21px;
+	height: 21px;
+	padding: 9px;
+	fill: #0d0d0d;
+}
+
+.instagram:hover {
+	fill: crimson;
+}
+
+.facebook {
+	width: 10px;
+	height: 19px;
+	padding: 10px 14px;
+	fill: #0d0d0d;
+}
+
+.facebook:hover {
+	fill: rgb(6, 85, 165);
+}
+
+.github {
+	width: 20px;
+	height: 20px;
+	padding: 9px;
+	fill: #0d0d0d;
+}
+
+.github:hover {
+	fill: darkorchid;
+}
+
+.dribble {
+	width: 20px;
+	height: 20px;
+	padding: 9px;
+	fill: #0d0d0d;
+}
+
+.dribble:hover {
+	fill: orangered;
+}
+
+.wave:hover path:first-child {
+    fill: lightseagreen;
+}
+.wave:hover path:nth-child(2) {
+    fill: mediumturquoise;
+}
+.wave:hover path:nth-child(3) {
+    fill: mediumaquamarine;
+}
+.wave:hover path:nth-child(4) {
+    fill:lightseagreen;
+}
+.wave:hover path:nth-child(5) {
+    fill: mediumaquamarine;
+}
+.wave:hover path:nth-child(6) {
+    fill: mediumturquoise;
+}
+.wave:hover path:nth-child(7) {
+    fill: azure;
+}
+.wave:hover path:last-child {
+    fill: aliceblue;
+}
+
+.voice {
+    transition: all .2s .2s ease-in;
+}
