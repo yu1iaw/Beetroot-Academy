@@ -200,6 +200,54 @@ header .logo h2 {
     fill: aliceblue;
 }
 
+
+.brick:hover path:first-child {
+    fill: lightseagreen;
+}
+.brick:hover path:nth-child(2) {
+    fill: darkturquoise;
+}
+.brick:hover path:nth-child(3) {
+    fill: paleturquoise;
+}
+.brick:hover path:nth-child(4) {
+    fill:lightseagreen;
+}
+.brick:hover path:nth-child(5) {
+    fill: paleturquoise;
+}
+.brick:hover path:nth-child(6) {
+    fill: darkcyan;
+}
+.brick:hover path:last-child {
+    fill: aliceblue;
+}
+
+
+.building:hover path:first-child {
+    fill: #cce6ff;
+}
+.building:hover path:nth-child(2) {
+    fill: #b3daff;
+}
+.building:hover path:nth-child(3) {
+    fill: azure;
+}
+.building:hover path:nth-child(4) {
+    fill: snow;
+}
+.building:hover path:nth-child(5) {
+    fill: lightskyblue;
+}
+.building:hover path:nth-child(6) {
+    fill: #e6f3ff;
+}
+.building:hover path:last-child {
+    fill: royalblue;
+}
+
 .voice {
     transition: all .2s .2s ease-in;
 }
+
+
