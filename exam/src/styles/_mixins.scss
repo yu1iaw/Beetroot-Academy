@@ -1,0 +1,15 @@
+@mixin icon-transform($prop) {
+	-webkit-transform: $prop;
+	-moz-transform: $prop;
+    -ms-transform: $prop;
+	transform: $prop;
+
+}
+
+@mixin icon-hover($color) {
+    &:hover {
+        fill: $color;
+        background-color: colors.$cloud;
+        border: 1px solid $color;
+    }
+}

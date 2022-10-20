@@ -1,0 +1,349 @@
+@import 'fonts';
+
+@media (max-width: 1200px) {
+   
+    main, nav, .footer {
+        max-width: 900px;
+    }
+    .hero-section {
+        background-position: 100% 50%;
+        background-size: 570px;
+    }
+    h1 {
+        font-size: 60px;
+        margin: 0 0 50px;
+    }
+    .hero-section .text-holder {
+        width: 36%;
+        margin-bottom: 40px;
+    }
+    .who {
+        margin-top: 0;
+    }
+    .who .row {
+        align-items: center;
+    }
+    .who .col:first-child {
+        width: 45%;
+    }
+    .who .col:last-child {
+        width: 50%;
+        text-align: justify;
+    }
+    .features .flex-container {
+        padding: 50px 0;
+    }
+    .card {
+        padding: 62px 70px 62px 40px;
+    }
+    .card-image {
+        width: 40%;
+        opacity: 0.8;
+        top: 61%;
+        left: 50%;
+        transform: none;
+    }
+    .card .span {
+        margin-top: 29px;
+    }
+
+    .testimonials {
+        background-image: none;
+    }
+    .testimonials .flex-container {
+        justify-content: center;
+    }
+    .review-card {
+        max-width: 550px;
+    }
+    .review-card:last-child {
+        margin-top: 30px;
+    }
+
+    .heading .footer-btns {
+        width: 49%;
+    }
+    .nav-btn .fa-regular {
+        font-weight: $semi-weight;
+        width: 21px;
+        font-size: $main-size;
+    }
+    .footer {
+        margin-top: 80px;
+    }
+}
+@media (max-width: 930px) {
+   
+    main, nav, .footer {
+        max-width: 700px;
+    }
+    nav {
+        padding: 15px 0;
+    }
+    .logo-menu .logo-nav {
+        display: flex;
+        margin-right: 70px;
+    }
+    li {
+        margin-right: 20px;
+    }
+    
+    .hero-section {
+        padding: 55px 0;
+        background-position: 100% 37%;
+        background-size: 407px;
+    }
+    h1 {
+        font-size: 40px;
+        margin: 0 0 20px;
+    }
+    .hero-section .text-holder {
+        width: 44%;
+        margin-bottom: 20px;
+    }
+    .hero-section .nav-btn.content-btn {
+        display: block;
+        margin: 0 auto;
+    }
+    .who {
+        padding: 55px 25px;
+    }
+    .who .col:last-child {
+        width: 52%;
+        font-size: $main-size;
+        text-align: left;
+    }
+    .who h2 {
+    
+        margin-bottom: 20px;
+    }
+    .features {
+        margin: 100px 0 0;
+    }
+    .features h2 {
+        
+        margin: 0;
+    }
+    .features-descr {
+        width: 75%;
+    }
+    .features .flex-container {
+        padding: 40px 0;
+    }
+    .card {
+        max-width: 340px;
+        padding: 30px 40px 50px 25px;
+    }
+    .card:nth-child(3),
+    .card:nth-child(4) {
+        margin: 20px 0;
+    }
+    .card .text {
+        font-size: $media-sub;
+    }
+    .who h2,
+    .features h2,
+    .testimonials h2, 
+    .heading h2 {
+        font-size: 30px;
+    }
+    .heading .footer-btns {
+        width: 65%;
+        align-items: center;
+    }
+    .footer-btns .nav-btn:first-child {
+        max-width: 190px;
+    }
+    .footer-btns .nav-btn:nth-child(2) {
+        max-width: 190px;
+        padding: 17.5px 10px;
+    }
+
+    .footer .col:first-child {
+        width: 36%;
+    }
+    .logo-title {
+        margin: -3px 0 37px 3px;
+    }
+    .address p {
+        font-size: $media-sub;
+    }
+    .social li:not(.last) {
+        margin: 0 2px;
+    }
+    .social li.last {
+        margin: 0 0 0 2px;
+    }
+    .footer span {
+        margin: 50px 0;
+    }
+}
+@media (min-width: 500px) and (max-width: 730px) {
+    main, nav, .footer {
+        max-width: 470px;
+    }
+    .logo-menu .logo-nav {
+        margin-right: 20px;
+    }
+    li {
+        margin-right: 7px;
+    }
+    a {
+        font-size: $media-base;
+    }
+    .who h2,
+    .features h2,
+    .testimonials h2,
+    .heading h2 {
+        font-size: 20px;
+    }
+    .nav-btn {
+        max-width: 150px;
+        font-size: $media-base;
+        padding: 10px 5px;
+    }
+    .nav-btn .fa-regular {
+        width: 15px;
+    }
+    .hero-section {
+        background-position: 100% 46%;
+        background-size: 252px;
+    }
+    .hero-section h1 {
+        font-size: 25px;
+        width: 100%;
+        margin: 0 0 15px;
+    }
+    .hero-section .text-holder {
+        font-size: $media-sub;
+        width: 56%;
+    }
+    .who {
+        margin-top: 0;
+    }
+    .who .row {
+        flex-direction: column;
+    }
+    .who .col:first-child {
+        width: 100%;
+    }
+    .who .who-image {
+        max-width: 270px;
+        margin: 0 auto;
+    }
+    .who .col:last-child {
+        width: 100%;
+        font-size: $media-sub;
+        text-align: center;
+        line-height: 25px;
+    }
+    .features {
+        margin: 70px 0 0;
+    }
+    .features-descr {
+        font-size: $media-sub;
+        width: 95%;
+    }
+    .features .flex-container {
+        padding: 20px 0;
+    }
+    .card {
+        max-width: 230px;
+        padding: 30px 25px;
+    }
+    .card-image {
+        opacity: 0;
+    }
+    h3 {
+        font-size: $secondary-size;
+    }
+    .card .text {
+        font-size: $media-base;
+        line-height: 24px;
+        text-align: justify;
+    }
+    .card .span:not(.span .last) {
+        margin-top: -5px;
+    }
+    .span a {
+        font-size: $media-base;
+    }
+    .card .fa-regular {
+        margin-left: 10px;
+    }
+    .testimonials {
+        padding: 50px 20px;
+    }
+    .testimonials .flex-container {
+        margin: 30px 0 0;
+    }
+    .review-card {
+        max-width: 400px;
+        padding: 50px 25px;
+    }
+    .review-card .review-text {
+        width: 70%;
+    }
+    .review-card .review-text p {
+        font-size: $media-base;
+        line-height: 24px;
+    }
+    .heading {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    .heading .title {
+        text-align: center;
+        margin: 0 0 8px;
+    }
+    .heading .footer-btns {
+        width: 70%;
+    }
+    .footer p {
+        font-size: $media-sub;
+    }
+    .footer .footer-btns .nav-btn {
+        max-width: 150px;
+        font-size: $media-base;
+        padding: 10px 5px;
+    }
+    .footer .col:first-child {
+        width: 36%;
+    }
+    .logo-title {
+        margin: 0 0 10px;
+    }
+    .logo-title .logotype {
+        margin-right: 10px;
+    }
+    .logo-title h3 {
+        font-size: $media-small;
+    }
+    .footer a,
+    .address p:first-child {
+        font-size: 12px;
+    }
+    .address p:nth-child(2) {
+        font-size: 10px;
+    }
+    .address p:nth-child(3),
+    .address p:nth-child(4) {
+        font-size: 11px;
+    }
+    h4 {
+        font-size: $media-small;
+        margin: 4px 0 12px 8px;
+    }
+    .about li, .help li {
+        margin: 0 0 -2px 8px;
+    }
+    .social ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .social li {
+        margin: 0;
+    }
+}
+
